@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="true">
+        <title>
+            Выберите классный фильм! - Онлайн-Кинотеатр Zinnchik
+        </title>
+        <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="./Bootstrap/css/main.css">
+        <script src="scripts/playerjs.js"></script>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">ZINNCHIK</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="./index.html">Главная</a></li>
+                        <li class="active"><a href="#">Каталог</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Топ-100</a></li>
+                        <li><a href="#">Донат</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>  
+        <div id="headerwrap-catalog">
+            <div class="container">
+                <div class="row centered">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h1>ФИЛЬМЫ</h1>
+                        <h3>Целая куча отечественных и зарубежных фильмов и сериалов на любой вкус!</h3>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+        <div class="container w">
+            <div class="row centered">
+                <br><br>
+                <div class="col-lg-4 col-lg-offset-4">
+                    <i class="fa fa-window-minimize"></i>
+                    <h4>Сайт на стадии разработки, поэтому полный функционал ещё не доступен.</h4>
+                </div>
+            </div>
+        </div>
+
+        <div id="dg">
+            <div class="container">
+                <div class="row center">
+                    <h3>Аниме</h3>
+                    <br>
+                    <div class="col-lg-4">
+                        <div class="tilt" onclick="predWtch()">
+                            <a data-toggle="modal" href="#filmMini"><img src="img/avatar-takagi.jpg" id="film1"></a>
+                            <h4 id="name1">Поддразнивания Такаги</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="filmMini" tabindex="-2" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    
+                    <div class="modal-header" style="background: rgb(31, 31, 31);">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                            <span aria-hidden="true" style="color:blanchedalmond;">&times;</span>
+                        </button>
+                        <h4 class="modal-title" style="color: aliceblue;">Это фильм!</h4>
+                    </div>
+                    
+                    <div class="modal-body" style="background: rgb(47, 47, 47);">
+                        <div id="headerwrap-film" class="predwtch">
+                            <document>
+                                <div class="row centered">
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <h1 id="namePred">Поддразнивания Такаги</h1>
+                                        <h3 id="infoPred">Такаги-Сан очень любит дразнить своего друга Нишикато, но он даже не подозревает из-за чего...</h3>
+                                        <br><br><br>
+                                        <div id="player"></div>
+    
+                                        <script>
+                                            var player = new Playerjs({id:"player", title:"1 серия", file:"blob:https://hideogenius.com/8131b2e3-e46b-487e-9d61-ca8168b592c4"});
+                                        </script>
+                                        <br>
+                                        <button type="button" class="btn btn-primary btn-md raleway" style="font-size: 100%;" onclick="document.location.href = './simple.html'">Перейти на страницу фильма</button>
+                                    </div>
+                                </div>
+                            </document>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer" style="background: rgb(31, 31, 31);">
+                        <button type="button" class="btn btn-default raleway" data-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container ft">
+                <div class="logo" onmouseover="informationVisible()" onmouseout="informationHidden()" onmousedown="informationVisible()" onmouseup="informationHidden()">
+                    <h1>ZINNCHIK<span>™</span></h1>
+                </div>
+                <div id="information" class="information col-lg-4 col-lg-offset-4 hidden">
+                    <h5> zinnchik™ 2020 Ivan Kurbakov & noname team</h5>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var predwatch = document.getElementById("filmMini");
+
+            function predWtch(){
+                var classVisible = predwatch.getAttribute ("class");
+                if (classVisible == "hidden filmmini"){
+                    predwatch.setAttribute ("class", "visible filmmini")
+                }
+                else if (classVisible == "visible filmmini"){
+                    predwatch.setAttribute ("class", "hidden filmmini")
+                }
+            }
+        </script>
+
+
+        <script>
+            function informationVisible(){
+                var info = document.getElementById ("information");
+                info.setAttribute ("class", "information col-lg-4 col-lg-offset-4 visible")
+            }
+            function informationHidden(){
+                var info = document.getElementById ("information");
+                info.setAttribute ("class", "information col-lg-4 col-lg-offset-4 hidden")
+            }
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="Bootstrap/js/bootstrap.js"></script>
+    </body>
+</html>

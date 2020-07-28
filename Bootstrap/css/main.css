@@ -1,0 +1,292 @@
+/* Импортируем инструменты для работы */
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway|Montserrat');
+
+.raleway{
+    font-family: "Raleway";
+}
+
+*{
+    transition: 0.15s;
+}
+
+body {
+    /* Настраиваем стили по-умолчанию */
+    background-color: #2a2a2a;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    margin-top: 70px;
+
+    /* Добавляем webkit */
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6{
+    /* Задаём стили заголовкам */
+    font-family: "Raleway";
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+} 
+
+p{
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered{
+    text-align: center;
+}
+
+a{
+    color: #f85c37;
+}
+
+a:hover, a:focus{
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+.navbar{
+    font-weight: 800;
+    font-family: "Raleway";
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.navbar-brand{
+    font-size: 20px;
+    font-family: "Montserrat";
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+    background-color: #f85c37;
+}
+.navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #cc3d19;
+}
+
+#headerwrap{
+    background: url(../../img/header-bg.jpeg) no-repeat center top;
+    margin-top: -100px;
+    padding-top: 20px;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 800px;
+    width:100%;
+    height: 800px;
+
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap-catalog{
+    background: url(../../img/header-bg-catalog.jpeg) no-repeat center top;
+    margin-top: -100px;
+    padding-top: 20px;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 800px;
+    width:100%;
+    height: 800px;
+
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap-film{
+    background: url(../../img/header-takagi.jpg) no-repeat center top;
+    padding-top: 20px;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 800px;
+    width:100%;
+    height: 500px;
+
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap-simple{
+    background: url(../../img/header-takagi.jpg) no-repeat center top;
+    margin-top: -50px;
+    padding-top: 20px;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 800px;
+    width:100%;
+
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.predwtch{
+    border-radius: 40px;
+    border: 3px solid rgb(134, 134, 134);
+}
+
+#player{
+    border-radius: 40px;
+    opacity: 90%;
+}
+
+.filmmini{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#headerwrap h1, #headerwrap-catalog h1 {
+    margin-top: 100px;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+#headerwrap h3, #headerwrap-catalog h3, #headerwrap-simple h3 {
+    margin-top: 100px;
+    color: white;
+    font-weight: 1000;
+    text-transform: uppercase;
+}
+
+#headerwrap-simple h1{
+    margin-top: 100px;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.w{
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+#dg{
+    background: #4d4d4d;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    transition:all 0.3s ease;
+}
+
+#dg h3{
+    font-size: 40px;
+    font-weight: 550;
+}
+
+#film1, #film2, #film3{
+    border-radius: 10px;
+    width: 300px;
+}
+
+#film1:hover, #film2:hover, #film3:hover{
+    opacity: 70%;
+    border: 8px solid rgba(255, 255, 255, 0);
+}
+
+.tilt{
+    -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+         -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+}
+
+.tilt:hover{
+    -webkit-transform: rotate(-2deg);
+       -moz-transform: rotate(-2deg);
+         -o-transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+}
+
+#name1, #name2, #name3{
+    font-weight: 800;
+}
+
+#footer{
+    background-color: rgb(126, 126, 126);
+}
+
+.ft{
+    padding-top: 15px;
+    padding-bottom: 45px;
+}
+
+.ft > .logo > h1{
+    font-family: "Montserrat";
+    color: white;
+    text-align: center;
+}
+
+.ft > .information > h5{
+    font-family: "Montserrat";
+    color: white;
+}
+
+.hidden{
+    opacity:0;
+    }
+
+.visible{
+    opacity:1;
+}
+
+.arrow-7 {
+    margin: 30px;
+}
+.arrow-7 span {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-bottom: 5px solid #ffffff;
+    border-right: 5px solid #c7c7c7;
+    transform: rotate(45deg);
+    margin: -16px;
+    animation: arrow-7 2s infinite;
+}
+.arrow-7 span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow-7 span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-7 {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+.arrow{
+    transform: translate(50%, 160%);
+}
