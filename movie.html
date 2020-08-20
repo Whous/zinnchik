@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -7,7 +6,7 @@
         <meta name="MobileOptimized" content="320">
         <meta name="HandheldFriendly" content="true">
         <title>
-            Выберите классный фильм! - Онлайн-Кинотеатр Zinnchik
+            ПРОСМОТР - Поддразнивания Такаги-Сан
         </title>
         <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="./Bootstrap/css/main.css">
@@ -26,8 +25,8 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="./index.html">Главная</a></li>
-                        <li class="active"><a href="#">Каталог</a></li>
+                        <li class="active"><a href="./index.html">Главная</a></li>
+                        <li><a href="./catalog.html">Каталог</a></li>
                         <li><a href="#">Новинки</a></li>
                         <li><a href="#">Топ-100</a></li>
                         <li><a href="#">Донат</a></li>
@@ -35,22 +34,22 @@
                 </div>
             </div>
         </div>  
-        <div id="headerwrap-catalog">
+        <div id="headerwrap-movie">
             <div class="container">
                 <div class="row centered">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <h1>ФИЛЬМЫ</h1>
-                        <h3>Целая куча отечественных и зарубежных фильмов и сериалов на любой вкус!</h3>
+                        <h1 id="movieName">Поддразнивания Такаги-Сан</h1>
+                        <h3 id="movieInfo">онлайн-кинотеатр, достойный вашего внимания!</h3>
                     </div>
                 </div>
             </div>
         </div> 
-        
+
         <div class="container w">
             <div class="row centered">
                 <br><br>
                 <div class="col-lg-4 col-lg-offset-4">
-                    <i class="fa fa-window-minimize"></i>
+                    <span>-</span>
                     <h4>Сайт на стадии разработки, поэтому полный функционал ещё не доступен.</h4>
                 </div>
             </div>
@@ -59,56 +58,17 @@
         <div id="dg">
             <div class="container">
                 <div class="row center">
-                    <h3>Аниме</h3>
+                    <h3>Просмотр</h3>
                     <br>
-                    <div class="col-lg-4">
-                        <div class="tilt" onclick="predWtch()">
-                            <a data-toggle="modal" href="#filmMini"><img src="img/avatar-takagi.jpg" id="film1"></a>
-                            <h4 id="name1">Поддразнивания Такаги</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="filmMini" tabindex="-2" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    
-                    <div class="modal-header" style="background: rgb(31, 31, 31);">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
-                            <span aria-hidden="true" style="color:blanchedalmond;">&times;</span>
-                        </button>
-                        <h4 class="modal-title" style="color: aliceblue;">Это фильм!</h4>
-                    </div>
-                    
-                    <div class="modal-body" style="background: rgb(47, 47, 47);">
-                        <div id="headerwrap-film" class="predwtch">
-                            <document>
-                                <div class="row centered">
-                                    <div class="col-lg-8 col-lg-offset-2">
-                                        <h1 id="namePred">Поддразнивания Такаги</h1>
-                                        <h3 id="infoPred">Такаги-Сан очень любит дразнить своего друга Нишикато, но он даже не подозревает из-за чего...</h3>
-                                        <br><br><br>
-                                        <div id="player"></div>
+                    <div id="player"></div>
     
-                                        <script>
-                                            var player = new Playerjs({id:"player", title:"1 серия", file:"https://93.189.41.9/webdav/u126668/takagi-san/1.1080.9dec75aff1ff2f57.mp4"});
-                                        </script>
-                                        <br>
-                                        <button type="button" class="btn btn-primary btn-md raleway" style="font-size: 100%;" onclick="document.location.href = './movie.html'">Перейти на страницу фильма</button>
-                                    </div>
-                                </div>
-                            </document>
-                        </div>
-                    </div>
-
-                    <div class="modal-footer" style="background: rgb(31, 31, 31);">
-                        <button type="button" class="btn btn-default raleway" data-dismiss="modal">Закрыть</button>
-                    </div>
+                        <script>
+                            var player = new Playerjs({id:"player", title:"1 серия", file:"https://93.189.41.9/webdav/u126668/takagi-san/1.1080.9dec75aff1ff2f57.mp4"});
+                        </script>
                 </div>
             </div>
         </div>
+
 
         <div id="footer">
             <div class="container ft">
@@ -134,7 +94,6 @@
                 }
             }
         </script>
-
 
         <script>
             function informationVisible(){
