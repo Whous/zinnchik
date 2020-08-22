@@ -59,8 +59,6 @@
         <div id="dg">
             <div class="container">
                 <div class="row center">
-                    <h3>Аниме</h3>
-                    <br>
                     <div class="col-lg-4">
                         <div class="tilt" onclick="predWtch()">
                             <a data-toggle="modal" href="#filmMini"><img src="img/avatar-takagi.jpg" id="film1"></a>
@@ -68,41 +66,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="filmMini" tabindex="-2" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    
-                    <div class="modal-header" style="background: rgb(31, 31, 31);">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
-                            <span aria-hidden="true" style="color:blanchedalmond;">&times;</span>
-                        </button>
-                        <h4 class="modal-title" style="color: aliceblue;">Это фильм!</h4>
-                    </div>
-                    
-                    <div class="modal-body" style="background: rgb(47, 47, 47);">
-                        <div id="headerwrap-film" class="predwtch">
-                            <document>
-                                <div class="row centered">
-                                    <div class="col-lg-8 col-lg-offset-2">
-                                        <h1 id="namePred">Поддразнивания Такаги</h1>
-                                        <h3 id="infoPred">Такаги-Сан очень любит дразнить своего друга Нишикато, но он даже не подозревает из-за чего...</h3>
-                                        <br><br><br>
-                                        <div id="player"></div>
-    
-                                        <script src="./scripts/takagi-player.js"></script>
-                                        <br>
-                                        <button type="button" class="btn btn-primary btn-md raleway" style="font-size: 100%;" onclick="document.location.href = './takagi-san.html'">Перейти на страницу фильма</button>
-                                    </div>
-                                </div>
-                            </document>
-                        </div>
-                    </div>
-
-                    <div class="modal-footer" style="background: rgb(31, 31, 31);">
-                        <button type="button" class="btn btn-default raleway" data-dismiss="modal">Закрыть</button>
+                <div class="col-lg-4" onclick="document.location.href = './spm-vd.html'">
+                    <div class="tilt">
+                        <a data-toggle="modal" href="#filmMini"><img src="img/avatar-spiderman-vozvracheniedomoy.jpg" id="film1"></a>
+                        <h4 id="name1">Поддразнивания Такаги</h4>
                     </div>
                 </div>
             </div>
@@ -118,20 +85,6 @@
                 </div>
             </div>
         </div>
-
-        <script>
-            var predwatch = document.getElementById("filmMini");
-
-            function predWtch(){
-                var classVisible = predwatch.getAttribute ("class");
-                if (classVisible == "hidden filmmini"){
-                    predwatch.setAttribute ("class", "visible filmmini")
-                }
-                else if (classVisible == "visible filmmini"){
-                    predwatch.setAttribute ("class", "hidden filmmini")
-                }
-            }
-        </script>
 
 
         <script>
