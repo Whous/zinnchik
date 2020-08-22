@@ -6,7 +6,7 @@
         <meta name="MobileOptimized" content="320">
         <meta name="HandheldFriendly" content="true">
         <title>
-            Смотрите фильмы онлайн в отличном качестве - Кинотеатр Zinnchik!
+            ПРОСМОТР - Поддразнивания Такаги-Сан
         </title>
         <link rel="stylesheet" href="./Bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="./Bootstrap/css/main.css">
@@ -34,12 +34,11 @@
                 </div>
             </div>
         </div>  
-        <div id="headerwrap">
+        <div id="headerwrap-spiderman-vozvracheniedomoy">
             <div class="container">
                 <div class="row centered">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <h1>ZINNCHIK</h1>
-                        <h3>онлайн-кинотеатр, достойный вашего внимания!</h3>
+                        <h1 id="movieName">Человек-Паук: Возвращение Домой (2017)</h1>
                     </div>
                 </div>
             </div>
@@ -58,23 +57,18 @@
         <div id="dg">
             <div class="container">
                 <div class="row center">
-                    <h3>Фильмы</h3>
+                    <h3>Просмотр</h3>
                     <br>
-                    <div class="col-lg-4" onclick="document.location.href = './takagi-san.html'">
-                        <div class="tilt">
-                            <a data-toggle="modal" href="#filmMini"><img src="img/avatar-takagi.jpg" id="film1"></a>
-                            <h4 id="name1">Поддразнивания Такаги</h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-4" onclick="document.location.href = './spm-vd.html'">
-                        <div class="tilt">
-                            <a data-toggle="modal" href="#filmMini"><img src="img/avatar-takagi.jpg" id="film1"></a>
-                            <h4 id="name1">Поддразнивания Такаги</h4>
-                        </div>
-                    </div>
+                    <div id="player"></div>
+    
+                        <script>
+                            var player = new Playerjs({id:"player", "title":"Человек-Паук: Возвращение Домой", "file":"https://cdn34.my.mail.ru/hv/63131825.mp4?slave%5B%5D=s%3Ahttp%3A%2F%2Fvideo-cephrgw1.i%3A9090%2Fvideo4%2F63131825-hv&p=f&expire_at=1598115600&touch=1506573017&reg=188&sign=4c489b550ef28d045d39f611197c9a34de670673"});
+                        </script>
                 </div>
             </div>
         </div>
+
+
         <div id="footer">
             <div class="container ft">
                 <div class="logo" onmouseover="informationVisible()" onmouseout="informationHidden()" onmousedown="informationVisible()" onmouseup="informationHidden()">
@@ -85,6 +79,20 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            var predwatch = document.getElementById("filmMini");
+
+            function predWtch(){
+                var classVisible = predwatch.getAttribute ("class");
+                if (classVisible == "hidden filmmini"){
+                    predwatch.setAttribute ("class", "visible filmmini")
+                }
+                else if (classVisible == "visible filmmini"){
+                    predwatch.setAttribute ("class", "hidden filmmini")
+                }
+            }
+        </script>
 
         <script>
             function informationVisible(){
