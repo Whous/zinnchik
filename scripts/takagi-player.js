@@ -2,7 +2,7 @@ var player = new Playerjs({id:"player",
     file:[
         {"title":"Сезон 1 (2018)", "folder":
             [
-                {"title":"Серия 1","file":"https://dv58.sibnet.ru/30/65/21/3065214.mp4?st=iohukqgMVO1ZQZ_osJy1Dg&e=1598198000&stor=58&noip=1"},
+                {"title":"Серия 1","file":"https://dv58.sibnet.ru/30/65/21/3065214.mp4?st=IYP4CeCETVw12MuEp9c2Xg&e=1598199000&stor=58&noip=1"},
                 {"title":"Серия 2","file":"https://dv53.sibnet.ru/30/71/48/3071483.mp4?st=w6WItZb6N2qOarRo7_d7Sw&e=1598116000&stor=53&noip=1"},
                 {"title":"Серия 3","file":"https://dv57.sibnet.ru/30/75/46/3075460.mp4?st=vO8E6rwBx-NQj5a9DqFMDA&e=1598116000&stor=57&noip=1"},
                 {"title":"Серия 4","file":"https://dv14.sibnet.ru/30/79/08/3079083.mp4?st=gxetmO9z9zpXjqQ69eHJdA&e=1598116000&stor=14&noip=1"},
