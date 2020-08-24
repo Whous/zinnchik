@@ -58,6 +58,7 @@ a:hover, a:focus{
     font-family: "Raleway";
     padding-right: 10px;
     padding-left: 10px;
+    padding-top:20px
 }
 
 .navbar-brand{
@@ -74,8 +75,8 @@ a:hover, a:focus{
 
 #headerwrap{
     background: url(../../img/header-bg.jpeg) no-repeat center top;
-    margin-top: -100px;
-    padding-top: 20px;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
     text-align: center;
     background-attachment: fixed;
     background-position: center center;
