@@ -1,6 +1,9 @@
 /* Импортируем инструменты для работы */
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway|Montserrat');
 
+html{
+    overflow-x:hidden;
+}
 .raleway{
     font-family: "Raleway";
 }
@@ -21,6 +24,7 @@ body {
     /* Добавляем webkit */
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6{
