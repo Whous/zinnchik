@@ -58,7 +58,8 @@ a:hover, a:focus{
     font-family: "Raleway";
     padding-right: 10px;
     padding-left: 10px;
-    padding-top:20px
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 .navbar-brand{
@@ -364,7 +365,6 @@ a:hover, a:focus{
 
 #film1:hover, #film2:hover, #film3:hover{
     opacity: 70%;
-    border: 8px solid rgba(255, 255, 255, 0);
 }
 
 .tilt{
@@ -450,4 +450,8 @@ a:hover, a:focus{
 
 .arrow{
     transform: translate(50%, 160%);
+}
+
+.filmmark{
+    width:20px;
 }
